@@ -5,9 +5,10 @@
 
 int main() {
 
+   int year = 2;
 	printf("hello world !\n");
-        printf("hello from c ");
-
+        printf("hello from c\n ");
+	printf("i am have %d \n ", year );
 
   
   return 0;
