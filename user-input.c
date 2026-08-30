@@ -1,28 +1,24 @@
 #include <stdio.h>
+#include <string.h>
 
+int main() {
+    char item[40] = "";
+    float price = 0.0f;
+    int quantity = 0;
+    float total = 0.0f;
 
-int main(){
+    printf("what item did you buy ; ");
+    fgets(item, sizeof(item), stdin);
+    item[strcspn(item, "\n")] = '\0';   
 
+    printf("what is the price for every one ");
+    scanf("%f", &price);                
 
-	int age = 0;
-	float gnu = 0.0f;
-	char code = '\0';
-	char user[25] = "";
-		
-//-------------------------------------
+    printf("how many would you like ");
+    scanf("%d", &quantity);
 
-	printf("%d  \n ", age);
-	printf("%f  \n", gnu);
-	printf("%c  \n", code);
-	printf("%s  \n", user);
+    total = price * quantity;
+    printf("total: %f\n", total);
 
-
-
-
-
-
-
-  return 0;
-
-
+    return 0;
 }
