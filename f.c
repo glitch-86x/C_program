@@ -8,10 +8,11 @@
 int main(){
     	
 
-   int num[] = {10, 20, 30, 40, 50};
+   int num[7];
 
-   printf("%d", num[3]);
-
+for(int i = 0; i < 7 ; i++){
+	printf("%d ", num[i]);
+}
 
 
 
