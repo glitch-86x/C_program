@@ -10,7 +10,7 @@ c: main.c
 	$(CC) $(CFLAGS) -o $@ $^
 
 # Rule for 'cc' from user-input.c
-cc: user-input.c
+cc: c.c
 	$(CC) $(CFLAGS) -o $@ $^
 # Rule for 'ccc' from f.c
 ccc: f.c
@@ -18,4 +18,4 @@ ccc: f.c
 
 
 clean:
-	rm -f $(TARGETS)
+	rm -rf $(TARGETS)
