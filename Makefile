@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -Wall
-TARGETS = c cc ccc
+TARGETS = c 
 
 # Default target: build both programs
 all: $(TARGETS)
@@ -9,13 +9,6 @@ all: $(TARGETS)
 c: main.c
 	$(CC) $(CFLAGS) -o $@ $^
 
-# Rule for 'cc' from user-input.c
-cc: c.c
-	$(CC) $(CFLAGS) -o $@ $^
-# Rule for 'ccc' from f.c
-ccc: f.c
-	$(CC) $(CFLAGS) -o $@ $^
-
-
+# how the make file clean ;
 clean:
 	rm -rf $(TARGETS)
